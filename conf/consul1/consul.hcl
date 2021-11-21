@@ -2,6 +2,7 @@ node_name = "consul1"
 data_dir = "/opt/consul/"
 
 server = true
+
 bootstrap_expect = 1
 
 ui_config {
@@ -12,3 +13,7 @@ bind_addr = "192.168.56.81"
 client_addr = "0.0.0.0"
 
 retry_join = ["192.168.56.81"]
+
+connect {
+  enabled = true
+}
