@@ -68,7 +68,7 @@ usermod -G docker -a nomad
 
 # ENVOY #
 #########
-curl -L https://func-e.io/install.sh | bash -s -- -b /usr/local/bin
+curl -fsSL https://func-e.io/install.sh | bash -s -- -b /usr/local/bin
 sudo cp `func-e which` /usr/local/bin
 
 

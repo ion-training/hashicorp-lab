@@ -7,6 +7,12 @@ export DEBIAN_FRONTEND=noninteractive
 apt-get update
 apt-get install -y zip unzip
 
+# ENVOY #
+#########
+curl -fsSL https://func-e.io/install.sh | bash -s -- -b /usr/local/bin
+sudo cp `func-e which` /usr/local/bin
+
+
 # hashicorp apt repo
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
@@ -40,6 +46,7 @@ chmod 640 /etc/consul.d/consul.hcl
 
 # consul set bash env
 cp -ap /vagrant/conf/consul1/consul-bash-env.sh /etc/profile.d/
+
 
 systemctl enable consul
 systemctl start consul
