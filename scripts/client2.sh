@@ -68,7 +68,10 @@ curl -fsSL https://raw.githubusercontent.com/docker/compose/1.29.2/contrib/compl
 # facilitate nomad access to docker
 usermod -G docker -a nomad
 
-
+# ENVOY #
+#########
+curl -L https://func-e.io/install.sh | bash -s -- -b /usr/local/bin
+sudo cp `func-e which` /usr/local/bin
 
 
 # CONSUL #
