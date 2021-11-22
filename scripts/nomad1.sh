@@ -75,3 +75,9 @@ cp -ap /vagrant/conf/nomad1/consul-bash-env.sh /etc/profile.d/
 
 systemctl enable consul
 systemctl start consul
+
+
+# optional liquidprompt #
+#########################
+apt-get install liquidprompt
+liquidprompt_activate
