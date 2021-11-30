@@ -64,6 +64,7 @@ apt-get install -y docker-ce docker-ce-cli containerd.io
 
 # add auto completion for docker
 curl -fsSL https://raw.githubusercontent.com/docker/compose/1.29.2/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose
+curl -fsSL https://github.com/docker/docker-ce/blob/master/components/cli/contrib/completion/bash/docker -o /etc/bash_completion.d/docker.sh
 
 # facilitate nomad access to docker
 usermod -G docker -a nomad
