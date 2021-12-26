@@ -25,7 +25,7 @@ Topology
 
 Copy the repo and cd into it
 ```
-git clone https://github.com/ion-training/hashicorp-lab.git && gcd hashicorp-lab
+git clone https://github.com/ion-training/hashicorp-lab.git && cd hashicorp-lab
 ```
 
 Start the LAB
